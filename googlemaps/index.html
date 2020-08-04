@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script
+    async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBr--pqYLSigZ5NGCnPch4mT8enlZthP_k&callback=initMap&libraries=&v=weekly"
+    ></script>
+  
+<style>
+  body {
+    display: flex;
+  }
+  .filter {
+    width: 20vw;
+    height: 100vh;
+    background: gray;
+  
+  }
+  
+  .map {
+    width: 80vw;
+    height: 100vh;
+  }
+</style>
+<body>
+  <div class="filter">
+    <label for="city">Ciudad</label>
+    <input type="city" id="city" placeholder="Ciudad">
+    <button id="filter" type="button">Buscar...</button>
+    <div id="data"></div>
+  </div>
+  <div class="map" id="map"></div>
+  <div id="map1"></div>
+</body>
+<script src="./index.js"></script>
+</html>
